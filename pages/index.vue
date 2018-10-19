@@ -10,6 +10,7 @@
       </h2>
       <div class="links">
         <button class="btn">Test ok</button>
+        <b-button @click="onClick">BS Button</b-button>
       </div>
     </div>
   </section>
@@ -25,6 +26,11 @@ export default {
   data() {
     return {
       title: 'Hello Test'
+    }
+  },
+  methods: {
+    onClick() {
+      console.log('hahahaha')
     }
   }
 }
